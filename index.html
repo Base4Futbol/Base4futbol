@@ -10,11 +10,13 @@
     <body>
         <section id="seccionLogin">
             <h1 class="titulo">⚽ Base Futbol ⚽</h1>
-            <p>Usuario</p>
-            <input type="text" name="campoUser" id="Usuario">
-            <p>Contraseña</p>
-            <input type="password"  name="campoPassword" id="Contraseña">
-            <button id="botonLogin">Login</button>
+            <form class ="login" method="post" action="./python/login.py">
+                <label for="usuario">Usuario</label>
+                <input type="text" name="campoUser" id="Usuario">
+                <label for="contrasena">Contraseña</label>
+                <input type="password"  name="campoPassword" id="Contraseña">
+                <input type="submit" value="Login">
+            </form>
         </section>
     </body>
 </html>
