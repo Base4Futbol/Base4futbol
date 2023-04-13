@@ -42,7 +42,7 @@
             function cambiarTexto(texto, complemento) {
             if (complemento === 'team_name') {
                 primerComplemento = texto;
-                const nuevaUrl = `${urlOriginal}/${primerComplemento}`;
+                const nuevaUrl = `${urlOriginal}/${primerComplemento}/${segundoComplemento}`;
                 milink.setAttribute("href", nuevaUrl);
             } else {
                 segundoComplemento = texto;
