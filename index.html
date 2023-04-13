@@ -29,22 +29,22 @@
             const urlOriginal = milink.getAttribute("href");
             let primerComplemento = "";
             let segundoComplemento = "";
-          
+
             complemento1.addEventListener("input", configurarVariables);
             complemento2.addEventListener("input", configurarVariables);
-          
+
             function configurarVariables(e) {
-              const valor = this.value;
-              const id = this.getAttribute("id");
-              cambiarTexto(valor, id)
+            const valor = this.value;
+            const id = this.getAttribute("id");
+            cambiarTexto(valor, id);
             }
-          
+
             function cambiarTexto(texto, complemento) {
-              if (complemento === 'complemento1') {
+            if (complemento === 'team_name') {
                 primerComplemento = texto;
                 const nuevaUrl = `${urlOriginal}/${primerComplemento}`;
                 milink.setAttribute("href", nuevaUrl);
-              } else {
+            } else {
                 segundoComplemento = texto;
                 const nuevaUrl = `${urlOriginal}/${primerComplemento}/${segundoComplemento}`;
                 milink.setAttribute("href", nuevaUrl);
