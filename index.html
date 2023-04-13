@@ -7,16 +7,49 @@
         <title>BASE FUTBOL</title>
         <link rel="stylesheet" href="./css/styles.css">
     </head>
-    <body>
-        <section id="seccionLogin">
-            <h1 class="titulo">⚽ Base Futbol ⚽</h1>
-            <form class ="login" method="post" action="./python/login.py">
-                <label for="usuario">Usuario</label>
-                <input type="text" name="campoUser" id="Usuario">
-                <label for="contrasena">Contraseña</label>
-                <input type="password"  name="campoPassword" id="Contraseña">
-                <input type="submit" value="Login">
-            </form>
+    <body align-items="center">
+        <!-- <section class="encabezado" id="Encabezado">
+            <h1>BaseFutbol</h1>
+        </section> -->
+        <section class="cuerpo">
+            <section id="seccionCredenciales" class="seccionCredenciales">
+                <h1>⚽ BaseFutbol ⚽</h1>
+                <br>
+                <h3>Ingresa el nombre de tu equipo</h3>
+                <input type="text" id="team_name">
+                <h3>Ingresa el token de tu video</h3>
+                <input type="text" id="token">
+                <a id="milink" href='https://base4futbol.github.io/Base4futbol/Equipos'>Ingresar</a>
+            </section>
         </section>
+        <script>
+            const milink = document.getElementById("milink");
+            const complemento1 = document.getElementById("team_name");
+            const complemento2 = document.getElementById("token");
+            const urlOriginal = milink.getAttribute("href");
+            let primerComplemento = "";
+            let segundoComplemento = "";
+          
+            complemento1.addEventListener("input", configurarVariables);
+            complemento2.addEventListener("input", configurarVariables);
+          
+            function configurarVariables(e) {
+              const valor = this.value;
+              const id = this.getAttribute("id");
+              cambiarTexto(valor, id)
+            }
+          
+            function cambiarTexto(texto, complemento) {
+              if (complemento === 'complemento1') {
+                primerComplemento = texto;
+                const nuevaUrl = `${urlOriginal}/${primerComplemento}`;
+                milink.setAttribute("href", nuevaUrl);
+              } else {
+                segundoComplemento = texto;
+                const nuevaUrl = `${urlOriginal}/${primerComplemento}`;
+                milink.setAttribute("href", nuevaUrl);
+              }
+            }
+        </script>
     </body>
 </html>

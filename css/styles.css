@@ -17,3 +17,27 @@
     flex-direction: column;
     padding: 5px;
 }
+#Encabezado {
+    display: flex;
+    background-color: gray;
+    width: 100%;
+    color: rgb(57, 57, 142)
+}
+.seccionCredenciales {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    border: solid black 2px; 
+    background-color: grey;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 30vh;
+    width: 40%;
+}
+.cuerpo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
