@@ -10,7 +10,9 @@
     border: solid black 1px;
     margin: 0 auto;
 }
-
+body {
+    background-color: #D3E0EA;
+}
 .login {
     display:flex;
     background-color: beige;
@@ -18,10 +20,9 @@
     padding: 5px;
 }
 .encabezado {
-    display: flex;
-    background-color: rgb(176, 173, 173);
-    width: 100%;
-    color: rgb(57, 57, 142)
+    display: block;
+    background-color: #276678;
+    color: #D3E0EA
 }
 .seccionCredenciales {
     display: flex;
