@@ -57,3 +57,40 @@ a{
     color: #F6F5F5;
     text-decoration: none;
 }
+#seccionLogin {
+    display: flex;
+    background-color: rgb(217, 230, 174);
+    justify-content: center;
+    align-self: center;
+    height: 100vh;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    border: solid black 1px;
+    margin: 0 auto;
+}
+.login {
+    display:flex;
+    background-color: beige;
+    flex-direction: column;
+    padding: 5px;
+}
+.seccionCredenciales {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    border: solid black 2px; 
+    background-color: rgb(176, 173, 173);
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 30vh;
+    width: 40%;
+}
+.cuerpo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
