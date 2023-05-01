@@ -52,3 +52,8 @@ h2 {
     justify-content: center;
     color: #F6F5F5;
 }
+
+a{
+    color: #F6F5F5;
+    text-decoration: none;
+}
