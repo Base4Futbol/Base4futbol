@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>BASE FUTBOL</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <link href="Images/LogoBaseFutbol.png" rel="icon" type="image/jpg" />
+    </head>
+    <body align-items="center">
+        <!-- <section class="encabezado" id="Encabezado">
+            <h1>BaseFutbol</h1>
+        </section> -->
+        <section class="cuerpo">
+            <section id="seccionCredenciales" class="seccionCredenciales">
+                <img src="Images/LogoBaseFutbol.png" width="80vh", height="80vh">
+                <br>
+                <h3>Ingresa el nombre de tu equipo</h3>
+                <input type="text" id="team_name">
+                <h3>Ingresa tu token</h3>
+                <input type="text" id="token">
+                <a id="milink" href='https://base4futbol.github.io/Base4futbol/Equipos'>Ingresar</a>
+            </section>
+        </section>
+        <script>
+            const milink = document.getElementById("milink");
+            const complemento1 = document.getElementById("team_name");
+            const complemento2 = document.getElementById("token");
+            const urlOriginal = milink.getAttribute("href");
+            let primerComplemento = "";
+            let segundoComplemento = "";
+
+            complemento1.addEventListener("input", configurarVariables);
+            complemento2.addEventListener("input", configurarVariables);
+
+            function configurarVariables(e) {
+            const valor = this.value;
+            const id = this.getAttribute("id");
+            cambiarTexto(valor, id);
+            }
+
+            function cambiarTexto(texto, complemento) {
+            if (complemento === 'team_name') {
+                primerComplemento = texto;
+                const nuevaUrl = `${urlOriginal}/${primerComplemento}/${segundoComplemento}`;
+                milink.setAttribute("href", nuevaUrl);
+            } else {
+                segundoComplemento = texto;
+                const nuevaUrl = `${urlOriginal}/${primerComplemento}/${segundoComplemento}`;
+                milink.setAttribute("href", nuevaUrl);
+              }
+            }
+        </script>
+    </body>
+</html>
