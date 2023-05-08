@@ -94,3 +94,32 @@ a{
     justify-content: center;
     flex-direction: column;
 }
+.tablero_partidos {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: max-content;
+    margin: 50px;
+    gap: 10px
+}
+.partido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid  #276678 3px;
+    padding: 6px;
+    border-radius: 5px;
+    width: 360px;
+    height: 360px;
+}
+.info_general{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+}
+.info_general p{
+    margin: 1px;
+}
