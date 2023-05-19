@@ -111,8 +111,8 @@ a{
     border: solid  #276678 3px;
     padding: 6px;
     border-radius: 5px;
-    width: 360px;
-    height: 400px;
+    width: 400px;
+    height: 440px;
 }
 .info_general{
     display: flex;
