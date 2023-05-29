@@ -94,6 +94,21 @@ a{
     justify-content: center;
     flex-direction: column;
 }
+.tablero_general{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tablero_recopilaciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid  #276678 3px;
+    padding: 6px;
+    border-radius: 5px;
+    width: 560px;
+    height: 380px;  
+}
 .tablero_partidos {
     display: flex;
     align-items: center;
